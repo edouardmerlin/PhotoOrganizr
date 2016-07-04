@@ -54,7 +54,7 @@ namespace PhotoOrganizr
             if (string.IsNullOrWhiteSpace(tbSource.Text)) { return; }
             if (string.IsNullOrWhiteSpace(tbDest.Text)) { return; }
 
-            AddToLog(Organizer.ReadExif(tbSource.Text));
+            AddToLog(Organizer.ReadExif(tbSource.Text, tbDest.Text));
         }
     }
 }
